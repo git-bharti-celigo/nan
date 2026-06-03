@@ -1,11 +1,14 @@
 {
-  "name": "nan",
-  "version": "2.27.0",
-  "description": "Native Abstractions for Node.js: C++ header for Node 0.8 -> 26 compatibility",
+  "name": "@celigo/nan",
+  "version": "2.27.0-electron42.1",
+  "description": "Native Abstractions for Node.js: C++ header for Node 0.8 -> 26 compatibility (Celigo fork: nodejs/nan 2.27.0 + Electron 42 v8::External tag fix)",
   "main": "include_dirs.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/nodejs/nan.git"
+    "url": "git+https://github.com/celigo/nan.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "test": "tap --gc --stderr test/js/*-test.js",
